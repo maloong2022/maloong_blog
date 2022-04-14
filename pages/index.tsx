@@ -1,9 +1,10 @@
 import { FeaturedPosts } from '../sections'
+import type { NextPage } from 'next'
 import { PostCard, Categories, PostWidget } from '../components'
 import { getPosts } from '../services'
 
 
-export default function Home({ posts }){
+const Home: NextPage = ({ posts }) => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <FeaturedPosts />
@@ -28,3 +29,5 @@ export async function getStaticProps(){
     props: { posts }
   }
 }
+
+export default Home
