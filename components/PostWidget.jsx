@@ -7,7 +7,7 @@ import { graphCMSImageLoader } from '../util'
 import { getSimilarPosts, getRecentPosts } from '../services'
 
 
-const PostWidget = ({ categories, slug}) => {
+const PostWidget = ({ categories, slug }) => {
   const [relatedPosts, setRelatedPosts] = useState([])
 
   useEffect(() => {
